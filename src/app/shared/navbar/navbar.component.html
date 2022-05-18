@@ -1,8 +1,9 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+    <a class="navbar-brand mr-lg-5 logo" [routerLink]="['/home']">
       <!-- <img src="./assets/img/brand/argon-white.png"> -->
-      QualityCoder
+      <!-- QualityCoder -->
+      <img src="./assets/img/brand/qualitycoder.png">
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -26,10 +27,10 @@
         </div>
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+        <li class="nav-item">
+          <a class="nav-link no-caret" routerLink="home" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Components</span>
+            <span class="nav-link-inner--text">Home</span>
           </a>
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
@@ -66,7 +67,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+            <span class="nav-link-inner--text">Sections</span>
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
